@@ -1,0 +1,74 @@
+#header
+{
+	background-color: orange;
+	color: black;
+	text-align: center;
+	padding: 55px;
+	font-size: 30px;
+}
+
+body
+{
+	font-family: courier new;
+	margin: 0px;
+
+}
+
+#caixa
+{
+	background-color: black;
+	display: flex;
+	height: screen.height;
+	width: screen.width;
+}
+
+#caixa a
+{
+	font-size: 20px;
+	justify-content: center;
+	display: flex;
+	
+}
+
+.links
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	align-items: center;
+	color: white;
+}
+
+.links a:hover
+{
+	color: yellow;
+	justify-content: center;
+	display: flex;
+}
+
+@media screen and (max-width: 600px)
+{
+	#caixa
+	{
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 600px)
+{
+	#caixa
+	{
+		justify-content: center;
+	}
+
+	.links
+	{
+		align-self: center;
+		margin-left: 80px;
+	}
+
+	.links a
+	{
+		font-size: 15px;
+	}
+}
